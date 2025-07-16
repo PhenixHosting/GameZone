@@ -51,6 +51,7 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
+            text-align: center;
             text-decoration: none;
             text-shadow: 0 0 10px rgba(255, 107, 107, 0.5);
         }
@@ -266,14 +267,26 @@
         .news-card:nth-child(4) { animation-delay: 0.4s; }
         .news-card:nth-child(5) { animation-delay: 0.5s; }
         .news-card:nth-child(6) { animation-delay: 0.6s; }
+
+        .center {
+            display: inline;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: auto;
+            margin-bottom: auto;
+            max-width: 40px;
+            max-height: 40px;
+        }
     </style>
 </head>
 <body>
     <header>
         <div class="container">
             <div class="header-content">
-                <img src="https://i.imgur.com/MRBQhvX.png" alt="GameZone Logo" class="logo" width="50" height="50">
+                <div class="logo">
+                <img src="https://i.imgur.com/RpB2bsY.png" alt="GameZone Logo" class="center" width="50" height="30%">
                 <a href="https://phenixhosting.github.com/GameZone/" class="logo">GameZone</a>
+                </div>
                 <nav>
                     <ul class="nav-menu">
                         <li><a href="#home">Główna</a></li>
