@@ -393,7 +393,7 @@
                         <p class="news-excerpt">${article.excerpt}</p>
                         <div class="news-meta">
                             <span>${article.author} • ${formatDate(article.date)}</span>
-                            <a href="posty/post1.html" class="read-more">Czytaj więcej →</a>
+                            <a href="/posty/post1.html" class="read-more">Czytaj więcej →</a>
                         </div>
                     </div>
                 `;
@@ -447,7 +447,7 @@
         });
 
         // Smooth scrolling for navigation
-        document.querySelectorAll('a[href^="https://phenixhosting.github.io/GameZone/posty/post1.html"]').forEach(anchor => {
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
                 const target = document.querySelector(this.getAttribute('href'));
